@@ -1,59 +1,34 @@
 /* Стилизация кнопки */
 @import url('../../assets/css/main.css');
 
-.container {
-    display: flex;
-    justify-content: center;
-}
-
-.container__button {
-    padding: 0;
-    width: 11.5rem;
-    height: 3rem;
+.buttons-card__button-item {
+    width: 189px;
+    height: 48px;
     border: 0;
-    border-radius: 0.6rem;
-    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: center;
 }
 
-.primary {
+.buttons-card_primary {
     color: var(--white);
     background-color: var(--blue);
-    cursor: pointer;
 }
 
-.primary:disabled {
-    color: var(--white);
-    background-color: var(--blue);
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-.secondary {
+.buttons-card_secondary {
     color: var(--white);
     background-color: var(--purple);
-    cursor: pointer;
 }
 
-.secondary:disabled {
-    color: var(--white);
-    background-color: var(--purple);
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-.alternate {
-    color: black;
-    border: 1px solid var(--grey-3);
+.buttons-card_alternate {
+    color: var(--grey-4);
     background-color: var(--white);
-    cursor: pointer;
-}
-
-.alternate:disabled {
-    color: gray;
     border: 1px solid var(--grey-3);
-    background-color: var(--white);
-    opacity: 0.5;
-    cursor: not-allowed;
 }
 
-
+.buttons-card__button-item_disabled:disabled {
+    opacity: 0.5;
+}

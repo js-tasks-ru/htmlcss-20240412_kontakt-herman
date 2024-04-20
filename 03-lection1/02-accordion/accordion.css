@@ -1,47 +1,55 @@
-details > summary {
-    list-style: none;
-}
+@import url('../../assets/css/main.css');
 
 .accordion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: 'Inter', sans-serif;
+    width: 730px;
+    height: 304px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
-.details-item {
-    border: 1px solid rgb(183, 183, 183);
+.accordion__item {
+    border: 1px solid var(--grey-3);
     border-radius: 0.5rem;
-    width: 40rem;
-    padding: 20px;
+    padding: 24px 32px;
     margin-bottom: 8px;
 }
 
-.details-item:last-child {
+.accordion__item:last-child {
     margin-bottom: 0;
+}
+
+.accordion__item[open] .accordion__arrow {
+    transform: rotate(226deg);
 }
 
 .accordion__summary {
     display: flex;
     justify-content: space-between;
+    list-style: none;
 }
 
-.accordion__text {
-    font-weight: 300;
-    margin-top: 1.5rem;
-    margin-bottom: 0;
+.accordion__summary::-webkit-details-marker {
+    display: none;
 }
 
-.arrow {
-    border: solid black;
+.accordion__title {
+    color: var(--black);
+}
+
+.accordion__content {
+    color: var(--grey-4)
+}
+
+.accordion__item[open] .accordion_text {
+    margin-top: 16px;
+}
+
+.accordion__arrow {
+    border: solid var(--grey-3);
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 5px;
     transform: rotate(45deg);
-}
-
-
-details[open] .accordion__summary .arrow {
-    transform: rotate(226deg);
-}
-
-  
+} 
