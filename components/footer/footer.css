@@ -1,0 +1,14 @@
+.footer {
+    padding-top: 72px;
+    padding-bottom: 136px;
+    background-color: white;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 640px;
+    margin: auto;
+    justify-content: center;
+}
