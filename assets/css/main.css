@@ -1,5 +1,9 @@
 @import '../fonts/fonts.css';
 
+@import url('../../04-lection2/01-histogram/histogram.css');
+@import url('../../04-lection2/02-skeleton/skeleton.css');
+@import url('../../04-lection2/02-skeleton/skeleton.css');
+
 @import url('../../components/page/page.css');
 @import url('../../components/header/header.css');
 @import url('../../components/main/main.css');
