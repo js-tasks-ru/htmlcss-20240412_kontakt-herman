@@ -7,8 +7,8 @@
 
 .accordion__item {
     border: 1px solid var(--grey-3);
+    box-sizing: border-box;
     border-radius: 0.5rem;
-    padding: 24px 32px;
     margin-bottom: 8px;
 }
 
@@ -24,6 +24,14 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 24px 32px;
+}
+
+.accordion__item[open] .accordion__summary {
+    padding-bottom: 0;
+    margin-bottom: 16px;
 }
 
 .accordion__summary::-webkit-details-marker {
@@ -35,11 +43,12 @@
 }
 
 .accordion__content {
+    padding: 0 32px 32px;
     color: var(--grey-4)
 }
 
-.accordion__item[open] .accordion__text {
-    margin-top: 16px;
+.accordion__text {
+    margin: 0;
 }
 
 .accordion__arrow {
