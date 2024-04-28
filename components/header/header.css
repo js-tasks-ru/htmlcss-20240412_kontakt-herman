@@ -1,9 +1,13 @@
 .header {
-    padding-top: 24px;
-    background-color: white;
+    padding: 96px 0 77px;
+    background-color: var(--white);
 }
 
 .header__title {
-    margin-top: 38px;
-    margin-bottom: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 64px;
+    color: var(--black);
 }

@@ -6,7 +6,7 @@
 
 @import url('../../components/page/page.css');
 @import url('../../components/header/header.css');
-@import url('../../components/main/main.css');
+@import url('../../components/preview/preview.css');
 @import url('../../components/footer/footer.css');
 @import url('../../components/container/container.css');
 @import url('../../components/card/card.css');
@@ -39,6 +39,6 @@ html, body {
     margin: 0;
 }
 
-h1 {
+h1, h2, h3, h4, p {
     margin: 0;
 }
