@@ -1,5 +1,8 @@
 @import '../fonts/fonts.css';
 
+@import url('../../03-lection1/01-button/');
+@import url('../../03-lection1/02-accordion/');
+
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -19,6 +22,6 @@
     --secondary: var(--purple);
 }
 
-* {
+body {
     font-family: 'Roboto', sans-serif;
 }
