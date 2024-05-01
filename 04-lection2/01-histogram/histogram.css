@@ -2,12 +2,10 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    width: 354px;
-    height: 185px;
-    gap: 0px;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
     padding: 16px 24px 24px 24px;
+    width: 26%;
 }
 
 .histogram__title {
@@ -35,7 +33,7 @@
 .histogram__item {
     border: 1px solid var(--blue);
     background-color: var(--blue);
-    width: 9px;
+    flex-basis: 50%;
 }
 
 .histogram__counter {
@@ -52,6 +50,7 @@
 .histogram__link {
     color: var(--blue);
     text-decoration: none;
+    padding-top: 3px;
 }
 
 .histogram__link:active {
